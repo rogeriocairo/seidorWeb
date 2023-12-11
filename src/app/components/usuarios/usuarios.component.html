@@ -1,0 +1,26 @@
+<!-- <ul>
+  <li *ngFor="let usuario of usuarios">
+    {{ usuario.Email }}
+    {{ usuario.Id }}
+  </li>
+
+</ul> -->
+<div class="comment-list">
+  <h2>Usuários</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{ usuario.id }}</td>
+        <td>{{ usuario.nome }}</td>
+        <td>{{ usuario.email }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
